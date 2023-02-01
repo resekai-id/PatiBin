@@ -53,7 +53,7 @@ export default function EditorControls({
           pathname: pasteId,
         });
         copy(window.location.href);
-        document.title = 'paste | ' + pasteId;
+        document.title = 'P! | ' + pasteId;
       }
     });
   }, [actualContent, language, recentlySaved]);
@@ -88,11 +88,11 @@ export default function EditorControls({
       pathname: '/',
       hash: '',
     });
-    document.title = 'paste';
+    document.title = 'Paste';
   }
 
   function unsetReadOnly() {
-    setReadOnly(false);
+    setReadOnly(true);
   }
 
   return (
