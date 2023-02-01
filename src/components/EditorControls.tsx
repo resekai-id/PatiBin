@@ -98,7 +98,7 @@ export default function EditorControls({
   return (
     <Header>
       <Section>
-        <Button onClick={reset}>[new]</Button>
+        <Button onClick={reset}>[New]</Button>
         <Button onClick={save}>
           {recentlySaved ? '[Link Copied!]' : saving ? '[Saving...]' : '[Save]'}
         </Button>
@@ -108,7 +108,7 @@ export default function EditorControls({
           setValue={setLanguage}
           ids={languages}
         />
-        {readOnly && <Button onClick={unsetReadOnly}>[edit]</Button>}
+        {readOnly && <Button onClick={unsetReadOnly}>[Edit]</Button>}
       </Section>
       <Section>
         <Button onClick={() => zoom(1)}>[+ </Button>
@@ -122,11 +122,11 @@ export default function EditorControls({
         <Button
           className="optional"
           as="a"
-          href="https://emojipati.xyz"
+          href="https://arh.my.id"
           target="_blank"
           rel="noreferrer"
         >
-          [About Me]
+          [About]
         </Button>
       </Section>
     </Header>
