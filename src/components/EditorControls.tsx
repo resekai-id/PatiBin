@@ -92,7 +92,7 @@ export default function EditorControls({
   }
 
   function unsetReadOnly() {
-    setReadOnly(true);
+    setReadOnly(false);
   }
 
   return (
@@ -108,7 +108,7 @@ export default function EditorControls({
           setValue={setLanguage}
           ids={languages}
         />
-        {readOnly && <Button onClick={unsetReadOnly}>[Edit]</Button>}
+        {readOnly && <Button onClick={setReadOnly}>[Edit]</Button>}
       </Section>
       <Section>
         <Button onClick={() => zoom(1)}>[+ </Button>
